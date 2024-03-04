@@ -6,13 +6,13 @@
 
 **Code Explanation:**
 > bg_subtractor = cv2.createBackgroundSubtractorMOG2()
-Background subtraction is a technique used to separate foreground objects (moving objects) from the background in a video sequence. MOG2 is a specific algorithm for background subtraction.
+* Background subtraction is a technique used to separate foreground objects (moving objects) from the background in a video sequence. MOG2 is a specific algorithm for background subtraction.
 
 > while True:
 >   ret, frame = cap.read()
 >   if not ret:
 >       break
-Within the loop, frames are read from the video file using the cap.read() function. The function returns two values: ret, which indicates whether a frame was successfully read, and frame, which contains the image data of the frame. 
+* Within the loop, frames are read from the video file using the cap.read() function. The function returns two values: ret, which indicates whether a frame was successfully read, and frame, which contains the image data of the frame. 
 
 > gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
 Each frame is converted to a grayscale. Grayscale images have only one channel, representing the intensity of light, which simplifies further processing.
