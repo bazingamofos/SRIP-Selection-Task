@@ -1,4 +1,5 @@
-# SRIP-Selection-Task (Project 2: Develop a respiration sensing system in SmartWatch)
+# SRIP-Selection-Task 
+# Project 2: Develop a respiration sensing system in SmartWatch
 
 **The task required to:**
 * Use OpenCV with the the [thermal video](https://drive.google.com/file/d/1PWS2MoFphHwTwblN82QZZbYqEmycN0Jj/view) to find components that have a frequency of 0-1 Hz. 
