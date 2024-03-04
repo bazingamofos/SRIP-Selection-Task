@@ -9,12 +9,9 @@
 * Background subtraction is a technique used to separate foreground objects (moving objects) from the background in a video sequence. MOG2 is a specific algorithm for background subtraction.
 
 > while True:
-> 
-> &nbsp; ret, frame = cap.read()
-> 
->   if not ret:
-> 
->   break
+> &nbsp;&nbsp;&nbsp;&nbsp;ret, frame = cap.read()
+> &nbsp;&nbsp;&nbsp;&nbsp;if not ret:
+> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break
 * Within the loop, frames are read from the video file using the cap.read() function. The function returns two values: ret, which indicates whether a frame was successfully read, and frame, which contains the image data of the frame. 
 
 > gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
@@ -37,6 +34,5 @@ python
 * The frequency of the connected component's appearance in the video is calculated. This is done by dividing the area of the component by the product of its width (w), height (h), and the frame rate.
 
 > if frequency >= 0 and frequency <= 1:
-> 
->   cv2.rectangle(frame, (x, y), (x + w, y + h), (0, 255, 0), 2)
+> &nbsp;&nbsp;&nbsp;&nbsp;cv2.rectangle(frame, (x, y), (x + w, y + h), (0, 255, 0), 2)
 * For each connected component passing the frequency filter, a rectangle is drawn around it on the original color frame.
