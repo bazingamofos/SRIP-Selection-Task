@@ -10,11 +10,11 @@
 
 > while True:
 > 
->   ret, frame = cap.read()
+> &nbsp; ret, frame = cap.read()
 > 
 >   if not ret:
 > 
->       break
+>   break
 * Within the loop, frames are read from the video file using the cap.read() function. The function returns two values: ret, which indicates whether a frame was successfully read, and frame, which contains the image data of the frame. 
 
 > gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
