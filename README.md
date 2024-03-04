@@ -2,7 +2,7 @@
 ### Project 2: Develop a respiration sensing system in SmartWatch
 
 **The task required to:**
-* Use OpenCV with the the [thermal video](https://drive.google.com/file/d/1PWS2MoFphHwTwblN82QZZbYqEmycN0Jj/view) to find components that have a frequency of 0-1 Hz. 
+* Use OpenCV with the [thermal video](https://drive.google.com/file/d/1PWS2MoFphHwTwblN82QZZbYqEmycN0Jj/view) to find components that have a frequency of 0-1 Hz. 
 * In the above question, components refer to the 4 or 8 connected components. 
 
 **Code Explanation:**
